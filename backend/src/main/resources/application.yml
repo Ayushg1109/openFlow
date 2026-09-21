@@ -1,1 +1,16 @@
-spring.application.name=op-backend
+spring:
+  application:
+    name: openflow-backend
+
+app:
+  version: 0.1.0
+  description: Event-driven team task platform
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
